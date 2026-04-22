@@ -1,0 +1,2 @@
+subset,rake_lo,rake_hi,declustering,n_pre_decluster,n_analyzed,observed_pct,null_mean_pct,null_std_pct,null_ci95_lo_pct,null_ci95_hi_pct,excess_pp,p_value,alpha,n_iterations,mu,verdict
+thrust_only,45,135,gk_variable,204,177,67.2316384180791,65.16723163841807,3.0017238130274357,59.87288135593221,71.1864406779661,2.064406779661021,0.268,0.05,1000,0.4,HIPOTESIS NULA ACEPTADA INCLUSO EN MECANISMOS DE EMPUJE
