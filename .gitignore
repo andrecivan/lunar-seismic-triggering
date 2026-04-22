@@ -1,0 +1,16 @@
+# Entorno virtual de Python
+venv/
+
+# Caches y bytecode de Python
+__pycache__/
+*.pyc
+
+# Checkpoints automáticos de Jupyter
+.ipynb_checkpoints/
+
+# Datos generados (se reproducen desde APIs públicas: USGS, JPL Horizons)
+data/raw/*.csv
+data/processed/*.csv
+
+# Variables de entorno locales (claves, secretos)
+.env
