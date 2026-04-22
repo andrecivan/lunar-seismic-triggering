@@ -14,3 +14,18 @@ data/processed/*.csv
 
 # Variables de entorno locales (claves, secretos)
 .env
+
+# Cache local de redes externas (USGS, Skyfield/JPL)
+data/cache/
+
+# Efemerides binarias descargadas (regenerables desde Skyfield)
+*.bsp
+
+# Build artifacts del paquete
+src/*.egg-info/
+*.egg-info/
+build/
+dist/
+
+# Cache de pytest
+.pytest_cache/
