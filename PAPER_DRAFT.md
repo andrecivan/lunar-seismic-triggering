@@ -46,7 +46,9 @@ Se obtuvo el catálogo global de eventos $M \geq 7.0$ del *USGS ComCat* (`https:
 
 La posición geocéntrica de la Luna se calculó con la efeméride DE421 (Folkner et al., 2009) vía la biblioteca Skyfield. Para cada evento, se determinó la altitud y distancia aparente de la Luna desde el hipocentro (latitud, longitud, profundidad como elevación negativa) sobre el elipsoide WGS84. Las componentes crudas del esfuerzo tidal se modelaron proporcionales a $1/r^3$ (gradiente del potencial gravitacional):
 
-$$\sigma_{\text{raw}} \propto \frac{\sin(\text{alt})}{r^3}, \qquad \tau_{\text{raw}} \propto \frac{\cos(\text{alt})}{r^3}$$
+$$
+\sigma_{\text{raw}} \propto \frac{\sin(\text{alt})}{r^3}, \qquad \tau_{\text{raw}} \propto \frac{\cos(\text{alt})}{r^3}
+$$
 
 Las constantes físicas se omiten porque solo importa la variación temporal relativa para el test estadístico.
 
@@ -54,14 +56,21 @@ Las constantes físicas se omiten porque solo importa la variación temporal rel
 
 Para cada plano nodal con buzamiento $\delta$, las componentes proyectadas son:
 
-$$\sigma_n = \sigma_{\text{raw}} \cos\delta - \tau_{\text{raw}} \sin\delta$$
-$$\tau = \sigma_{\text{raw}} \sin\delta + \tau_{\text{raw}} \cos\delta$$
+$$
+\sigma_n = \sigma_{\text{raw}} \cos\delta - \tau_{\text{raw}} \sin\delta
+$$
+
+$$
+\tau = \sigma_{\text{raw}} \sin\delta + \tau_{\text{raw}} \cos\delta
+$$
 
 El Coulomb Failure Stress se ensambló como $\Delta\text{CFS} = \Delta\tau + \mu\,\Delta\sigma_n$ con coeficiente de fricción estática $\mu = 0.4$ (valor estándar para fallas de subducción; sensibilidad $\mu \in [0.2, 0.6]$ no altera las conclusiones cualitativas).
 
 **Resolución de la ambigüedad nodal.** Dado que cada mecanismo focal admite dos planos matemáticamente equivalentes (NP1, NP2) y que una elección sesgada (e.g., $\max$) infla artificialmente la fracción de eventos favorables, se adoptó el promedio simétrico:
 
-$$\Delta\text{CFS}_{\text{unbiased}} = \frac{\Delta\text{CFS}_1 + \Delta\text{CFS}_2}{2}$$
+$$
+\Delta\text{CFS}_{\text{unbiased}} = \frac{\Delta\text{CFS}_1 + \Delta\text{CFS}_2}{2}
+$$
 
 ### 2.4 Modelo nulo Monte Carlo (time-shuffling)
 

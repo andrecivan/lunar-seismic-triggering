@@ -30,7 +30,9 @@ La aparente significancia del análisis sin declustering es **atribuible al agru
 
 Una observación adicional, producto colateral de la simulación Monte Carlo, merece atención metodológica explícita: **la línea base bajo la hipótesis nula no se centra en el 50 %**, como un razonamiento ingenuo sobre simetría sugeriría. En las tres configuraciones del catálogo (333, 309 y 288 eventos), la fracción media de eventos con $\Delta$CFS > 0 bajo time-shuffling oscila en torno al **60 %**:
 
-$$\bar{p}_{nulo} \approx 60\% \quad (\text{rango: } 59.4\% - 60.4\%)$$
+$$
+\bar{p}_{nulo} \approx 60\% \quad (\text{rango: } 59.4\% - 60.4\%)
+$$
 
 ### 2.1. Origen del sesgo
 

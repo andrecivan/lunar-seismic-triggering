@@ -27,7 +27,11 @@ Inicialmente, se sometió a prueba la creencia popular de que los sismos se agru
 Se abandonaron las variables escalares para implementar un marco geomecánico newtoniano. Dado que la amplitud de la marea gravitacional decae con el cubo de la distancia, el análisis se reconfiguró bajo un modelado vectorial proporcional a $1/r^3$ (Notebook 06).
 
 La falla de los materiales bajo estrés crustal fue evaluada usando el **Criterio de Falla de Coulomb**:
-$$ \Delta \text{CFS} = \Delta \tau + \mu \cdot \Delta \sigma_n $$
+
+$$
+\Delta \text{CFS} = \Delta \tau + \mu \cdot \Delta \sigma_n
+$$
+
 donde $\tau$ es la perturbación cortante, $\sigma_n$ el esfuerzo normal (descompresión / *unclamping*) y $\mu$ el coeficiente de fricción estática (valor estándar $\mu = 0.4$ para fallas de subducción; sensibilidad evaluada en NB08).
 
 ## 5. Fase 3: Proyección en Planos de Falla Reales y Resolución de la Ambigüedad Nodal
